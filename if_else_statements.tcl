@@ -20,3 +20,16 @@ if { $lang == "SV" } {
 ##################### OUTPUTS ###############################################
 # Welcome. Systemverilog is completely supported. Create your project.
 # Yes. UVM is supported.
+
+##################### SWITCH CASE STATEMENT #################################
+
+set langHDL "SV" # "SystemC" for other output
+switch $langHDL \
+"Verilog"    "puts {Selected Language is Verilog}" \
+"VHDL"       "puts {Selected Language is VHDL}" \
+"SV"         "puts {Selected Language is Systemverilog}" \
+"TCL"        "puts {Selected Language is TCL}" \
+"default"    "puts {It's not supported by Vivado}";
+##################### OUTPUTS ###############################################
+# Selected Language is Systemverilog          -> While langHDL="SV"
+# It's not supported by Vivado                -> While langHDL="SystemC"
