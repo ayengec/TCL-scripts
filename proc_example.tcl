@@ -12,8 +12,8 @@ proc divider {val div} {
     return $y
     }
 }
-
-set result [divider 2 0]       # second example [divider 120 24]
+# second example [divider 120 24]
+set result [divider 2 0]
 puts "The result = $result"
 
 ################### OUTPUT #######################
