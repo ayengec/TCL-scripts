@@ -24,6 +24,7 @@ puts "Here is end of the while loop"
 # Be care to break one space while using for loop or others that you must use curly braces{}
 # for loop logic is similar to C or other languages
 # this example shows how to use nested loops
+# incr operator = increment :)
 for {set i 0} {$i <= 4} {incr i} {    
     for {set j 0} {$j <= 5} {incr j} {
         puts " Matrix indexes: M{$i}{$j}"
