@@ -20,7 +20,7 @@ puts "The result = $result"
 # You cannot give div=0 Try again.
 # The result = ZERO DIVISION ERROR! ENDLESS
 
-############While [divider 120 24] OUTPUT ########
+############ While [divider 120 24] OUTPUT #######
 # The result = 5
 ##################################################
 
