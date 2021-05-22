@@ -21,6 +21,9 @@ foreach element $csvParseList {
     puts "Iteratively elements in csvParseList: $element"
 }
 
+# lreplace, concat, lreplace, lsort, larrange and more methods can be used in TCL similarly Python!
+# Search on Google other methods.
+
 ################### OUTPUTS ###########################
 # The length of the language list : 5
 # 
