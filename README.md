@@ -30,3 +30,7 @@ Clone the repo
    ```sh
    git clone https://github.com/ayengec/TCL-scripts.git
    ```
+
+## ONLINE TCL INTERPRETER
+[CLICK HERE](https://rextester.com/l/tcl_online_compiler)
+Copy the codes (in .tcl files) and press F8 to run scripts.
