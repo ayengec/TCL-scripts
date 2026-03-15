@@ -53,3 +53,159 @@ The testbench initializes reset and monitors FIFO `empty` and `full` flags autom
 - Regression testing: Easy to add more testcases without modifying the testbench
 - Version control friendly: Only RTL, SV testbench, and Tcl scripts are tracked
 - Flexible stimulus: Modify sequences directly from Tcl without touching SV
+
+# Simulation Output
+## Simülasyon Çıktısı
+
+### Vivado TCL Console when "vivado -mode batch -source ./run_sim_fifo.tcl" runs
+
+```
+Vivado% source run_sim_fifo.tcl
+
+INFO: Compiling RTL and Testbench...
+
+Vivado Simulator 2023.2 — xvlog
+INFO: [XSIM 43-2032] Parsing SystemVerilog file "../src/dual_port_fifo.sv" into library work
+INFO: [XSIM 43-2032] Parsing SystemVerilog file "../src/dual_port_fifo.sv" done
+
+INFO: [XSIM 43-2032] Parsing SystemVerilog file "../tb/tb_dual_port_fifo.sv" into library work
+INFO: [XSIM 43-2032] Parsing SystemVerilog file "../tb/tb_dual_port_fifo.sv" done
+
+INFO: Elaborating design...
+
+Vivado Simulator 2023.2 — xelab
+Copyright 1986-2023 Xilinx Inc. All Rights Reserved.
+Running: xelab tb_dual_port_fifo -s sim_tb_dual_port_fifo
+Multi-threading is on. Using 4 slave threads.
+INFO: [XSIM 43-4] Starting static elaboration
+INFO: [XSIM 43-4] Completed static elaboration
+INFO: [XSIM 43-2] Starting simulation data flow analysis
+INFO: [XSIM 43-2] Completed simulation data flow analysis
+INFO: [XSIM 43-3] Finished loading design
+
+-------------------------------------------------------
+Running Testcase: Write 0-15
+-------------------------------------------------------
+
+-------------------------------------------------------
+Running Testcase: Random Write/Read
+-------------------------------------------------------
+
+-------------------------------------------------------
+Running Testcase: Full FIFO check
+-------------------------------------------------------
+
+-------------------------------------------------------
+ALL TESTCASES COMPLETED
+Check logs in ./logs
+-------------------------------------------------------
+```
+
+---
+
+### `./logs/Write 0-15_log.txt`
+
+```
+INFO: Reset done
+INFO: Starting Write Phase
+WRITE: 0
+WRITE: 1
+WRITE: 2
+WRITE: 3
+WRITE: 4
+WRITE: 5
+WRITE: 6
+WRITE: 7
+WRITE: 8
+WRITE: 9
+WRITE: 10
+WRITE: 11
+WRITE: 12
+WRITE: 13
+WRITE: 14
+WRITE: 15
+INFO: Starting Read Phase
+READ: expected=0,  actual=0
+READ: expected=1,  actual=1
+READ: expected=2,  actual=2
+READ: expected=3,  actual=3
+READ: expected=4,  actual=4
+READ: expected=5,  actual=5
+READ: expected=6,  actual=6
+READ: expected=7,  actual=7
+READ: expected=8,  actual=8
+READ: expected=9,  actual=9
+READ: expected=10, actual=10
+READ: expected=11, actual=11
+READ: expected=12, actual=12
+READ: expected=13, actual=13
+READ: expected=14, actual=14
+READ: expected=15, actual=15
+INFO: Testcase 'Write 0-15' completed
+```
+
+---
+
+### `./logs/Random Write_Read_log.txt`
+
+```
+INFO: Reset done
+INFO: Starting Write Phase
+WRITE: 5
+WRITE: 2
+WRITE: 7
+WRITE: 9
+WRITE: 1
+WRITE: 3
+INFO: Starting Read Phase
+READ: expected=5, actual=5
+READ: expected=2, actual=2
+READ: expected=7, actual=7
+READ: expected=9, actual=9
+READ: expected=1, actual=1
+READ: expected=3, actual=3
+INFO: Testcase 'Random Write/Read' completed
+```
+
+---
+
+### `./logs/Full FIFO check_log.txt`
+
+```
+INFO: Reset done
+INFO: Starting Write Phase
+WRITE: 0
+WRITE: 1
+WRITE: 2
+WRITE: 3
+WRITE: 4
+WRITE: 5
+WRITE: 6
+WRITE: 7
+WRITE: 8
+WRITE: 9
+WRITE: 10
+WRITE: 11
+WRITE: 12
+WRITE: 13
+WRITE: 14
+WRITE: 15
+INFO: Starting Read Phase
+READ: expected=0,  actual=0
+READ: expected=1,  actual=1
+READ: expected=2,  actual=2
+READ: expected=3,  actual=3
+READ: expected=4,  actual=4
+READ: expected=5,  actual=5
+READ: expected=6,  actual=6
+READ: expected=7,  actual=7
+READ: expected=8,  actual=8
+READ: expected=9,  actual=9
+READ: expected=10, actual=10
+READ: expected=11, actual=11
+READ: expected=12, actual=12
+READ: expected=13, actual=13
+READ: expected=14, actual=14
+READ: expected=15, actual=15
+INFO: Testcase 'Full FIFO check' completed
+```
