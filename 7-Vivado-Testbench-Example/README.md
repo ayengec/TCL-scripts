@@ -103,7 +103,7 @@ Check logs in ./logs
 
 ---
 
-### `./logs/Write 0-15_log.txt`
+### `./logs/Write_0_15_log.txt`
 
 ```
 INFO: Reset done
@@ -146,7 +146,7 @@ INFO: Testcase 'Write 0-15' completed
 
 ---
 
-### `./logs/Random Write_Read_log.txt`
+### `./logs/Random_Write_Read_log.txt`
 
 ```
 INFO: Reset done
@@ -169,43 +169,3 @@ INFO: Testcase 'Random Write/Read' completed
 
 ---
 
-### `./logs/Full FIFO check_log.txt`
-
-```
-INFO: Reset done
-INFO: Starting Write Phase
-WRITE: 0
-WRITE: 1
-WRITE: 2
-WRITE: 3
-WRITE: 4
-WRITE: 5
-WRITE: 6
-WRITE: 7
-WRITE: 8
-WRITE: 9
-WRITE: 10
-WRITE: 11
-WRITE: 12
-WRITE: 13
-WRITE: 14
-WRITE: 15
-INFO: Starting Read Phase
-READ: expected=0,  actual=0
-READ: expected=1,  actual=1
-READ: expected=2,  actual=2
-READ: expected=3,  actual=3
-READ: expected=4,  actual=4
-READ: expected=5,  actual=5
-READ: expected=6,  actual=6
-READ: expected=7,  actual=7
-READ: expected=8,  actual=8
-READ: expected=9,  actual=9
-READ: expected=10, actual=10
-READ: expected=11, actual=11
-READ: expected=12, actual=12
-READ: expected=13, actual=13
-READ: expected=14, actual=14
-READ: expected=15, actual=15
-INFO: Testcase 'Full FIFO check' completed
-```
