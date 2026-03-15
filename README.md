@@ -4,7 +4,7 @@
   <a href="https://github.com/ayengec/TCL-scripts">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tcl-Tk_universal_scripting.svg/678px-Tcl-Tk_universal_scripting.svg.png" alt="Logo" width="90" height="160">
   </a>
-  <h3 align="center">TCL SCRIPTING</h3>
+  <h3 align="center">TCL SCRIPTING for EDA RTL</h3>
   <p align="center">
     TCL Script Examples for RTL, FPGA & ASIC Design Flows
     <br />
