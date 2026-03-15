@@ -105,7 +105,3 @@ vivado -mode batch -source run_sim_fifo.tcl
 If you spot a mistake, want to add an example, or have a cleaner way to do something — feel free to open an issue or a pull request. The goal is for this to be useful to people learning TCL in an FPGA/ASIC context, so any improvement in that direction is welcome.
 
 ---
-
-<p align="center">
-  <a href="https://github.com/ayengec/TCL-scripts/issues">Report Bug</a> · <a href="https://github.com/ayengec/TCL-scripts/issues">Request Feature</a>
-</p>
