@@ -4,10 +4,6 @@
   <h3 align="center">TCL SCRIPTING for EDA RTL</h3>
   <p align="center">
     TCL Script Examples for RTL, FPGA & ASIC Design Flows
-    <br />
-    <a href="https://github.com/ayengec/TCL-scripts/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ayengec/TCL-scripts/issues">Request Feature</a>
   </p>
 </p>
 
