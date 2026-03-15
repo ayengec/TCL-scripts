@@ -30,9 +30,8 @@ xelab $tb_name -s sim_$tb_name
 # -------------------------
 # Each test case is a dict: name, write_pattern, read_pattern
 set testcases [list \
-    [dict create name "Write 0-15"          write_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15} read_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15}] \
-    [dict create name "Random Write/Read"   write_pattern {5 2 7 9 1 3} read_pattern {5 2 7 9 1 3}] \
-    [dict create name "Full FIFO check"     write_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15} read_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15}] \
+    [dict create name "Write_0_15"          write_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15} read_pattern {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15}] \
+    [dict create name "Random_Write_Read"   write_pattern {5 2 7 9 1 3} read_pattern {5 2 7 9 1 3}] \
 ]
 
 # -------------------------
