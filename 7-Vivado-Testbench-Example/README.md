@@ -46,7 +46,8 @@ All write/read operations are driven by Tcl using `force` commands, keeping the 
 ## Reset and FIFO Status
 The testbench initializes reset and monitors FIFO `empty` and `full` flags automatically.
 
-#Why Use Tcl Automation?
+---
+##Why Use Tcl Automation?
 
 Reproducible results: Every run executes the same test flow
 
