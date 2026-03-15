@@ -49,10 +49,7 @@ The testbench initializes reset and monitors FIFO `empty` and `full` flags autom
 ---
 ## Why Use Tcl Automation?
 
-Reproducible results: Every run executes the same test flow
-
-Regression testing: Easy to add more testcases without modifying the testbench
-
-Version control friendly: Only RTL, SV testbench, and Tcl scripts are tracked
-
-Flexible stimulus: Modify sequences directly from Tcl without touching SV
+-Reproducible results: Every run executes the same test flow
+-Regression testing: Easy to add more testcases without modifying the testbench
+-Version control friendly: Only RTL, SV testbench, and Tcl scripts are tracked
+-Flexible stimulus: Modify sequences directly from Tcl without touching SV
