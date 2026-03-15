@@ -1,7 +1,7 @@
 # Dual-Port FIFO Simulation with Tcl & SystemVerilog
 
 This repository demonstrates a **complete FPGA simulation workflow** for a simple Dual-Port FIFO.  
-It teaches **Tcl scripting for simulation automation** and uses **SystemVerilog testbench** to interface with the DUT.  
+It focuses **Tcl scripting for simulation automation** and uses **SystemVerilog testbench** to interface with the DUT.  
 
 ---
 
