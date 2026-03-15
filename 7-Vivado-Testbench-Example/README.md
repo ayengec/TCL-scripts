@@ -55,7 +55,6 @@ The testbench initializes reset and monitors FIFO `empty` and `full` flags autom
 - Flexible stimulus: Modify sequences directly from Tcl without touching SV
 
 # Simulation Output
-## Simülasyon Çıktısı
 
 ### Vivado TCL Console when "vivado -mode batch -source ./run_sim_fifo.tcl" runs
 
@@ -89,10 +88,6 @@ Running Testcase: Write 0-15
 
 -------------------------------------------------------
 Running Testcase: Random Write/Read
--------------------------------------------------------
-
--------------------------------------------------------
-Running Testcase: Full FIFO check
 -------------------------------------------------------
 
 -------------------------------------------------------
